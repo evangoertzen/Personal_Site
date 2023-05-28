@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    {% include "bootstrap.html" %}
+		{% load static %}
+    <link rel="stylesheet" href="{%static 'resume.css' %}"/>
+		<title>Contact</title>
+  </head>
+
+  <body>
+    {% include "navigation.html" %}
+    <br>
+    <br>
+    <div class="mx-auto" style="width:500px">
+      <div class="contact">
+          <h4>Contact</h4>
+          <hr>
+          <h4>Email: evan.goertzen@gmail.com</h4>
+          <h4>Phone: (970) 567-8247</h4>
+          <h4>Website: evangoertzen.com</h4>
+          <div class="inline-block">
+            <a href="https://www.linkedin.com/in/evan-goertzen-17a22b229" target="_blank" ><img src="{% static 'linkedin.png' %}" alt="Linkedin link" style="width:150px"></a>
+          </div>
+          <div class="inline-block">
+            <a href="https://github.com/evangoertzen" target="_blank" ><img src="{% static 'github.png' %}" alt="GitHub link" style="width:150px"></a>
+          </div>
+      </div>
+    </div>
+    
+  <body/>
+</html>

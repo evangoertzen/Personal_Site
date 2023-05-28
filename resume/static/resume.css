@@ -2,23 +2,54 @@
 	text-align: center;
 }
 
-body {
-	padding: 40px;
-}
-
-table {
-	margin: auto;
-	border: 1px solid black;
-	background-color: tan;
-}
-
-
-td {
-	font-family: monospace;
-	background: tan;
-	width: 60px;
-	height: 60px;
-	border: 1px solid black;
-	font-size: 60px;
+/* Add a black background color to the top navigation */
+.topnav {
+	background-color: #88b47f;
+	overflow: hidden;
+	border-radius: 15px;
+  }
+  
+/* Style the links inside the navigation bar */
+.topnav a {
+	float: left;
+	color: #88b47f;
 	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+	width: 200px;
+}
+
+.inline-block {
+	display: inline-block;
+ }
+
+.contact {
+	border-radius: 15px 50px 30px;
+	background-color: #88b47f;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	padding-right: 20px;
+}
+
+body {
+	padding: 60px;
+	background-color:#393D3F;
+	color: #ddd;
+	font-family: "Lucida Console", "Courier New", monospace;
+}
+
+::selection {
+	background: #88b47f;
+}
+
+a {
+	color: #88b47f;
 }

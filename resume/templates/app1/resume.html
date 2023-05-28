@@ -1,7 +1,6 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <h6>Evan Goertzen</h6>
     {% include "bootstrap.html" %}
 		{% load static %}
 		<link rel="stylesheet" href="{%static 'resume.css' %}"/>
@@ -10,9 +9,8 @@
 
   <body>
     {% include "navigation.html" %}
-    <p>i'm not using my actual resume yet so here is a picture of a recipt<p>
-      <div class="d-flex justify-content-center">
-        <embed src="{%static 'resume.pdf' %}" width="2000px" height="2100px" />
-      </div>
+    <div class="d-flex justify-content-center">
+      <embed src="{%static 'resume.pdf' %}" width="2000px" height="2100px" />
+    </div>
   <body/>
 </html>

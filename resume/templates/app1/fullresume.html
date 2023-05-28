@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    {% include "bootstrap.html" %}
+		{% load static %}
+    <link rel="stylesheet" href="{%static 'resume.css' %}"/>
+		<title>Full Resume</title>
+  </head>
+
+  <body>
+    {% include "navigation.html" %}
+    <br>
+    <div class="mx-auto" style="width: 1000px">
+      <p>Here is my complete resume. You can view a pdf of my condensed 1 page resume <a href="/resume">here</a>.<p>
+    </div>
+    <div class="d-flex justify-content-center">
+        <embed src="{%static 'fullresume.pdf' %}" width="2000px" height="2100px" />
+    </div>
+  </body>
+</html>

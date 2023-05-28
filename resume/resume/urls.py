@@ -20,7 +20,9 @@ from app1 import views as app1_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', app1_views.home),
-    path('resume', app1_views.resume),
-    path('vote', app1_views.vote),
-    path('photos', app1_views.photos),
+    path('about/', app1_views.about),
+    path('resume/', app1_views.resume),
+    path('photos/', app1_views.photos),
+    path('fullresume/', app1_views.fullresume),
+    path('contact/', app1_views.contact),
 ]

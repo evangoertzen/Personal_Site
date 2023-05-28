@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+import os
+from django.conf import settings
 
 # Create your views here.
 def home(request):
@@ -8,8 +10,18 @@ def home(request):
 def resume(request):
     return render(request, 'app1/resume.html')
 
-def vote(request):
-    return render(request, 'app1/vote.html')
+def about(request):
+    return render(request, 'app1/about.html')
+
+def fullresume(request):
+    return render(request, 'app1/fullresume.html')
 
 def photos(request):
-    return render(request, 'app1/photos.html')
+    path = settings.PHOTOS_DIR
+    img_list = os.listdir(path)
+    context = {"images": img_list,
+               "path": settings.PHOTOS_URL}
+    return render(request, 'app1/photos.html', context)
+
+def contact(request):
+    return render(request, 'app1/contact.html')

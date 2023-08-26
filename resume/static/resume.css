@@ -8,7 +8,7 @@
 	overflow: hidden;
 	border-radius: 15px;
   }
-  
+
 /* Style the links inside the navigation bar */
 .topnav a {
 	float: left;
@@ -30,15 +30,6 @@
 	display: inline-block;
  }
 
-.contact {
-	border-radius: 15px 50px 30px;
-	background-color: #88b47f;
-	padding-top: 20px;
-	padding-left: 20px;
-	padding-bottom: 20px;
-	padding-right: 20px;
-}
-
 body {
 	padding: 60px;
 	background-color:#393D3F;
@@ -52,4 +43,13 @@ body {
 
 a {
 	color: #88b47f;
+}
+
+.contact {
+	border-radius: 15px 50px 30px;
+	background-color: #88b47f;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	padding-right: 20px;
 }

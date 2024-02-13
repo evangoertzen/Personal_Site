@@ -4,33 +4,34 @@
     {% include "bootstrap.html" %}
 		{% load static %}
     <link rel="stylesheet" href="{%static 'resume.css' %}"/>
+    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.png' %}" >
 		<title>About Me</title>
   </head>
 
   <body>
     {% include "navigation.html" %}
     <br>
-    <div class="mx-auto" style="width: 1000px">
+    <div class="mx-auto" style="width: 75%">
       <h4>About Me</h4>
     </div>
 
-    <div class="mx-auto" style="width: 1000px">
+    <div class="mx-auto" style="width: 75%">
       <p>Hi, I’m Evan.</p>
 
       <p>
-        I grew up in Fort Collins, CO with an older sister and younger brother. My parents met at the University of Nebraska-Lincoln, where they both studied electrical engineering. They passed down the engineering genes to me.
+        Thanks for visiting my site. Here's a little bit about me:
       </p>
 
       <p>
-        I was in 4th grade the first time I saw code. My older sister was taking a computer class, where I saw her using Scratch to build a game by dragging and dropping code blocks onto the screen. I was interested and started to build my own games.
+        I'm currently at Chico State studying computer science. This semester (Spring 2024), I'm working part time for Lawrence Livermore National Laboratory. I'm also working with one of my professors to build an app for our Physics of Music class.
       </p>
 
       <p>
-        I’m now studying computer science at Chico State and plan to graduate in the Spring of 2025. It’s cool that I can go to school for something I would be doing outside of class anyway. I especially liked my  Data Structures and Algorithms, Operating Systems, and Embedded Systems classes. I’m also glad I took Web last semester (Spring 2023) so I can build this site. We used Django, but I’m planning to learn React too.
+        I grew up in Fort Collins, Colorado. I have an older sister and younger brother. My siblings and parents all went to the University of Nebraska. I grew up watching Nebraska football and considered going, but I wanted to move to California for school because of the opportunity in technology.
       </p>
 
       <p>
-        I’m currently interning at Lawrence Livermore National Lab until December of 2023. I’m working on full-stack development with a team of engineers to build and improve radiation and contamination test tracking software. I have really enjoyed my time at the lab so far.
+        Lately I've been working a new project that I think is pretty cool. I learned in my CSCI 411 - Advanced Data Structures and Algorithms class about an algorithm that detects positive cycles within graphs. In a graph where nodes represent currencies and edges represent exchange rates, a positive cycle means that exchanging currencies in order corresponding to the graph cycle will give you more of the original currency than you started with. I'm using Python and Coingecko API to detect positive cycles in crypto currency exchange rates. Suprisingly, it has been working, but most exchange platforms charge an exchange fee that costs more than the profit of each cycle. You can find that project on my Github if you want to check it out.
       </p>
 
       <p>

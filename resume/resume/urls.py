@@ -23,6 +23,5 @@ urlpatterns = [
     path('about/', app1_views.about),
     path('resume/', app1_views.resume),
     path('photos/', app1_views.photos),
-    path('fullresume/', app1_views.fullresume),
     path('contact/', app1_views.contact),
 ]

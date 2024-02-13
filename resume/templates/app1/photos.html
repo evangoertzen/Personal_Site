@@ -4,6 +4,7 @@
     {% include "bootstrap.html" %}
 		{% load static %}
 		<link rel="stylesheet" href="{%static 'resume.css' %}"/>
+    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.png' %}" >
 		<title>Photos</title>
   </head>
 
@@ -11,7 +12,7 @@
     {% include "navigation.html" %}
     <br>
     <h4> Here is a collection of pictures that I've taken so you can get to know me better. These photos were taken a bunch of differnt places including Colorado, Chico, San Francisco, Miami, and Germany.</h4>
-    
+
     {% for image in images %}
       <img src="/{{ path }}/{{image}}" alt="{{image}}" height="400">
     {% endfor %}

@@ -4,13 +4,16 @@
     {% include "bootstrap.html" %}
 		{% load static %}
 		<link rel="stylesheet" href="{%static 'resume.css' %}"/>
+    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.png' %}" >
 		<title>Resume</title>
   </head>
 
   <body>
     {% include "navigation.html" %}
     <div class="d-flex justify-content-center">
-      <embed src="{%static 'resume.pdf' %}" width="2000px" height="2100px" />
+      <embed class="pdfobject" type="application/pdf" style="overflow: auto;" src="{%static 'Resume.pdf' %}#navpanes=0&scrollbar=0" width="90%" height="1150px" />
     </div>
+
+
   <body/>
 </html>

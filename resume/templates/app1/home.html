@@ -4,12 +4,13 @@
     {% include "bootstrap.html" %}
 		{% load static %}
 		<link rel="stylesheet" href="{%static 'resume.css' %}"/>
+    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.png' %}" >
 		<title>Home</title>
   </head>
 
   <body>
     {% include "navigation.html" %}
-    <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center" style="padding: 15px">
       <h1>Welcome to my site!</h1>
     </div>
 
@@ -17,26 +18,22 @@
       <img src="{%static 'myself.png' %}" alt="Picture of me" class="rounded-circle" width="400">
     </div>
 
-    <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center" style="padding: 15px">
       <h2>Evan Goertzen</h2>
     </div>
-
-    <br>
 
     <div class="d-flex justify-content-center">
       <div class = "linkpng">
         <a href="https://www.linkedin.com/in/evan-goertzen-17a22b229" target="_blank" ><img src="{% static 'linkedin.png' %}" alt="Linkedin link" style="width:150px"></a>
       </div>
-      <div class = "linkpng">
+      <div class = "linkpng" style="position: relative; top: -10px;">
         <a href="https://github.com/evangoertzen" target="_blank" ><img src="{% static 'github.png' %}" alt="GitHub link" style="width:150px"></a>
       </div>
     </div>
-    
+
     <hr>
     <div class="center">
       <p class = "p1">I'm making this website to practice my web skills. For this project I am using Django, Bootrap, Python, HTML, JavaScript, CSS, Docker, and hosting on Google Cloud. This website is a work in progress and I will update it with my latest resume and other information.</p>
-      <p>Here is a website introduction that ChatGPT wrote for me:</p>
-      <p>Welcome to my personal website! I am excited to share with you a glimpse into my life and interests. Here you will find information about me, my background, and my hobbies. <br> I created this website to connect with others who share similar passions and to showcase my skills and accomplishments. Whether you are here to learn more about me or simply browsing, I hope you find something that resonates with you. <br> Feel free to explore the various pages and sections of the website, and don't hesitate to reach out if you have any questions or comments. Thank you for visiting, and I hope you enjoy your time here!</p>
     </div>
   <body/>
 </html>

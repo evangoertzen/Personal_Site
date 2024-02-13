@@ -13,9 +13,6 @@ def resume(request):
 def about(request):
     return render(request, 'app1/about.html')
 
-def fullresume(request):
-    return render(request, 'app1/fullresume.html')
-
 def photos(request):
     path = settings.PHOTOS_DIR
     img_list = os.listdir(path)
